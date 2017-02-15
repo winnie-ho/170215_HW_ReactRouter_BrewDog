@@ -4,13 +4,16 @@ class BrewerySelect extends React.Component {
   constructor(){
     super();
     this.state = {selectedIndex: undefined};
+    console.log(this);
   }
 
   //Functions
   handleChange(event){
-    let newIndex = event.target.value;
-    this.setState({ selectedIndex: newIndex});
+    var newIndex = event.target.value;
+    console.log(newIndex);
+    this.setState({selectedIndex: newIndex});
     this.props.selectBeer(this.props.beers[newIndex]);
+    console.log("props in BrewerySelect", this.props);
   }
 
   render() {
@@ -24,5 +27,6 @@ class BrewerySelect extends React.Component {
     );
   }
 } 
+
 
 export default BrewerySelect;

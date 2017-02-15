@@ -36,14 +36,10 @@ class Main extends React.Component {
           <div>
           </div>
         </div>
-            // <Collection beers = {this.state.beers}/>
-
       )
   }
 
 }
-
-let main = new Main();
 
 export default Main;
 

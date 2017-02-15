@@ -5,6 +5,7 @@ class Collection extends React.Component {
   constructor(){
     super();
     this.state = {beers: []};
+    console.log(this);
   }
 
 // Functions

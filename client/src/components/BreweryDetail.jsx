@@ -1,5 +1,14 @@
 import React from "react";
 
-const BreweryDetail = props => <div>{props.children}</div>
+let BreweryDetail = (props) =>
+ // if (!props.beer){
+ //   return(<h4> No Beer Selected</h4>)
+ // }
+
+   <div>
+   {props.children}
+   </div>
+   
+
 
 export default BreweryDetail;
