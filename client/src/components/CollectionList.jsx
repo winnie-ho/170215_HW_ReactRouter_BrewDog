@@ -11,7 +11,7 @@ class CollectionList extends React.Component {
     const beerNodes = this.props.beers.map((beer, index)=>{
       return(
         <Beer key = {beer.id}>
-          <div className = "brewery-container">
+          <div className = "collection-container">
             <div className = "beer">
             <h4> {beer.name} </h4>
             <img width = "90" src = {beer.image_url}/>
@@ -21,7 +21,7 @@ class CollectionList extends React.Component {
       );     
     });
     return (
-      <div className = "brewery-list">
+      <div className = "collection-list">
         {beerNodes}
       </div>
       );

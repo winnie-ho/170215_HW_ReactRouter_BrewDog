@@ -1,5 +1,5 @@
 import React from "react";
-import Beer from "./beer";
+import BreweryDetail from "./BreweryDetail";
 
 class BreweryList extends React.Component {
   constructor(){
@@ -8,21 +8,23 @@ class BreweryList extends React.Component {
 
   //Functions
   render(){
-    // const beerNodes = this.props.beers.map((beer, index)=>{
-    //   return(
-    //     <Beer key = {beer.id}>
-    //       <div className = "brewery-container">
-    //         <div className = "beer">
-    //         <h4> {beer.name} </h4>
-    //         <img width = "90" src = {beer.image_url}/>
-    //         </div>
-    //       </div>
-    //     </Beer>
-    //   );     
-    // });
+    const beerNodes = this.props.beers.map((beer, index)=>{
+      return(
+        <BreweryDetail key = {beer.id}>
+          <div className = "brewery-container">
+            <div className = "beer">
+            <h4> {beer.name} </h4>
+            <p> {beer.tagline} </p>
+            <img width = "90" src = {beer.image_url}/>
+            </div>
+          </div>
+        </BreweryDetail>
+      );     
+    });
     return (
       <div className = "brewery-list">
-      Hello
+      <p>The stuff inside our magic beer!</p>
+      {beerNodes}
       </div>
       );
   }

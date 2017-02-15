@@ -1,14 +1,13 @@
 import React from "react";
 import CollectionList from "./CollectionList";
 
-
 class Collection extends React.Component {
   constructor(){
     super();
     this.state = {beers: []};
   }
 
-//Functions
+// Functions
   componentDidMount(){
     const url = "https://api.punkapi.com/v2/beers";
     const request = new XMLHttpRequest();
@@ -34,7 +33,6 @@ class Collection extends React.Component {
 
 }
 
-let brewery = new Collection();
 
 export default Collection;
 
