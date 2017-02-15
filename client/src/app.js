@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import Main from "./components/Main";
 import Home from "./components/Home";
 import Brewery from "./components/Brewery";
-import Contact from "./components/Contact";
+import Collection from "./components/Collection";
 import {Router, Route, IndexRoute, browserHistory} from "react-router";
 
 window.onload = () => {
@@ -13,7 +13,7 @@ window.onload = () => {
         <IndexRoute component = {Home}/>
         <Route path = "home" component = {Home}/>
         <Route path = "brewery" component = {Brewery}/>
-        <Route path = "contact" component = {Contact}/>
+        <Route path = "collection" component = {Collection}/>
       </Route>
     </Router>,
 
