@@ -1,0 +1,38 @@
+h1{
+  font-family: Tradizional DEMO;
+}
+
+h2{
+  font-family: Tradizional DEMO;
+}
+
+p{
+  font-family: Arial;
+}
+
+a{
+  font-family: Arial;
+  margin: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  font-family: Arial;
+  color:gray;
+}
+
+.brewery-container{
+  display: flex;
+  flex-direction: row;
+  border: red 1px dashed;
+}
+
+.beer{
+  padding: 10px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  border: red 1px dashed;
+
+}
