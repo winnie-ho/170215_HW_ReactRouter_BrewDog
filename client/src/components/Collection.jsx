@@ -25,7 +25,7 @@ class Collection extends React.Component {
 
   render(){
     return (
-        <div>
+        <div className = "collection-div">
           <h1>Our Beers</h1>
           <CollectionList beers = {this.state.beers}/>
         </div>

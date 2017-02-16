@@ -27,10 +27,12 @@ class Main extends React.Component {
   render(){
     return (
         <div>
-        <h1>BrewDog Beers</h1>
-          <Link to = "/home">Home</Link>
-          <Link to = "/brewery">Brewery</Link>
-          <Link to = "/collection">Collection</Link>
+        <h1>
+        <img className = "logo" src = "http://vignette2.wikia.nocookie.net/logopedia/images/6/6f/BrewDog_old.png/revision/latest?cb=20140916195032"/>
+        BrewDog</h1>
+          <Link to = "/home">HOME</Link>
+          <Link to = "/brewery">BREWERY</Link>
+          <Link to = "/collection">COLLECTION</Link>
           <hr/>
           {this.props.children}
           <div>

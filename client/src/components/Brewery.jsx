@@ -34,7 +34,7 @@ class Brewery extends React.Component {
       <div>
         <h1>Inside Our Beers</h1>
         <BrewerySelect beers = {this.state.beers} selectBeer = {this.setFocusBeer}/>
-        <BreweryInfo beer = {this.state.focusBeer} beers = {this.state.beers}/>
+        <BreweryInfo beer = {this.state.focusBeer}/>
       </div>
       )
   }
